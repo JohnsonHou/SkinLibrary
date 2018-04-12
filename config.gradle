@@ -1,0 +1,93 @@
+ext {
+    isAlone = false;//false:作为集成模式存在，true:作为组件模式存在
+
+    // 各个组件版本号的统一管理
+    android = [
+            compileSdkVersion: 25,
+            buildToolsVersion: "25.0.2",
+            minSdkVersion    : 16,
+            targetSdkVersion : 25,
+            versionCode      : 1,
+            versionName      : '1.0.0',
+    ]
+
+    libsVersion = [
+            // 第三方库版本号的管理
+            supportLibraryVersion = "25.3.1",
+            retrofitVersion = "2.1.0",
+            glideVersion = "3.7.0",
+            picassoVersion = "2.5.2",
+            frescoVersion = "0.12.0",
+            loggerVersion = "2.1.1",
+            gsonVersion = "2.8.0",
+            butterknife = "8.8.0",
+            retrofit = "2.3.0",
+            rxjava = "2.1.1",
+            rxjava_android = "2.0.1",
+            rxlifecycle = "2.1.0",
+            rxlifecycle_components = "2.1.0",
+            dagger_compiler = "2.11",
+            dagger = "2.11",
+            greenDao = "3.2.2",
+            arouter_api = "1.2.2",
+            arouter_compiler = "1.1.3",
+            transformations = "2.0.2",
+            rxjava_adapter = "2.3.0",
+            gson_converter = "2.3.0",
+            scalars_converter = "2.3.0",
+            rxpermission = "0.9.4",
+            eventbus="3.0.0",
+            support_v4="25.3.1",
+            okhttp3="3.8.1",
+            multidex="1.0.1"
+    ]
+
+    // 依赖库管理
+    dependencies = [
+            appcompatV7               : "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion",
+            design                    : "com.android.support:design:$rootProject.supportLibraryVersion",
+            cardview                  : "com.android.support:cardview-v7:$rootProject.supportLibraryVersion",
+            palette                   : "com.android.support:palette-v7:$rootProject.supportLibraryVersion",
+            recycleview               : "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion",
+            support_v4                : "com.android.support:support-v4:$rootProject.support_v4",
+            annotations               : "com.android.support:support-annotations:$rootProject.supportLibraryVersion",
+            eventBus                  : "org.greenrobot:eventbus:$rootProject.eventbus",
+            glide                     : "com.github.bumptech.glide:glide:$rootProject.glideVersion",
+            picasso                   : "com.squareup.picasso:picasso:$rootProject.picassoVersion",
+            fresco                    : "com.facebook.fresco:fresco:$rootProject.frescoVersion",
+            // 在 API < 14 上的机器支持 WebP 时，需要添加
+            fresco_animated_support   : "com.facebook.fresco:animated-base-support:$rootProject.frescoVersion",
+            // 支持 GIF 动图，需要添加
+            fresco_animated_gif       : "com.facebook.fresco:animated-gif:$rootProject.frescoVersion",
+            // 支持 WebP （静态图+动图），需要添加
+            fresco_webpsupport        : "com.facebook.fresco:webpsupport:$rootProject.frescoVersion",
+            fresco_animated_webp      : "com.facebook.fresco:animated-webp:$rootProject.frescoVersion",
+            gson                      : "com.google.code.gson:gson:$rootProject.gsonVersion",
+            logger                    : "com.orhanobut:logger:$rootProject.loggerVersion",
+            butterknife               : "com.jakewharton:butterknife:$rootProject.butterknife",
+            butterknife_compiler      : "com.jakewharton:butterknife-compiler:$rootProject.butterknife",
+            retrofit                  : "com.squareup.retrofit2:retrofit:$rootProject.retrofit",
+            okhttp3                   : "com.squareup.okhttp3:okhttp:$rootProject.retrofit",
+
+
+            retrofit_adapter_rxjava2  : "com.squareup.retrofit2:adapter-rxjava2:$rootProject.rxjava_adapter",
+            retrofit_converter_gson   : "com.squareup.retrofit2:converter-gson:$rootProject.gson_converter",
+            retrofit_converter_scalars: "com.squareup.retrofit2:converter-scalars:$rootProject.scalars_converter",
+            rxpermission              : "com.tbruyelle.rxpermissions2:rxpermissions:$rootProject.rxpermission@aar",
+            rxjava2                   : "io.reactivex.rxjava2:rxjava:$rootProject.rxjava",
+            rxjava2_android           : "io.reactivex.rxjava2:rxandroid:$rootProject.rxjava_android",
+            rxlifecycle2              : "com.trello.rxlifecycle2:rxlifecycle:$rootProject.rxlifecycle",
+            rxlifecycle2_components   : "com.trello.rxlifecycle2:rxlifecycle-components:$rootProject.rxlifecycle_components",
+
+
+            dagger2_compiler          : "com.google.dagger:dagger-compiler:$rootProject.dagger_compiler",
+            dagger2                   : "com.google.dagger:dagger:$rootProject.dagger",
+            greenDao                  : "org.greenrobot:greendao:$rootProject.greenDao",
+            transformations           : "jp.wasabeef:glide-transformations:$rootProject.transformations",
+            multidex                  : "com.android.support:multidex:$rootProject.multidex",
+
+            //路由通讯
+            arouter_api               : "com.alibaba:arouter-api:$rootProject.arouter_api",
+            arouter_compiler          : "com.alibaba:arouter-compiler:$rootProject.arouter_compiler"
+    ]
+}
