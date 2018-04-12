@@ -25,6 +25,9 @@ private void initSkinLoader(Context ctx) {
 ````
 
 - 在Activity中使用(可以建造一个基类)
+
+
+改变状态栏可以使用[StatusBarUtil 状态栏工具类](https://jaeger.itscoder.com/android/2016/03/27/statusbar-util.html)
 ````
 public class SkinBaseActivity extends AppCompatActivity implements ISkinUpdate,IDynamicNewView{
 
@@ -67,7 +70,7 @@ public class SkinBaseActivity extends AppCompatActivity implements ISkinUpdate,I
         
     }
 
-    //改变状态栏着色，这里使用的是一个第三方https://jaeger.itscoder.com/android/2016/03/27/statusbar-util.html
+    //改变状态栏着色，这里使用的是一个第三方
     public void changeStatusColor() {
         
         if (!isNeedStatusBarAutoChange())return;
