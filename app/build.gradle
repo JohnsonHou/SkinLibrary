@@ -27,4 +27,5 @@ dependencies {
     })
     compile(rootProject.ext.dependencies.appcompatV7)
     testCompile 'junit:junit:4.12'
+    compile 'com.jchou.android.skinlib:skinlibrary:1.0.1'
 }

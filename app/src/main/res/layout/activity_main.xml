@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/skin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:onClick="clickBtn"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_btn_color"
+        skin:enable="true" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:onClick="clickText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/bg_btn_color" />
+
+</LinearLayout>

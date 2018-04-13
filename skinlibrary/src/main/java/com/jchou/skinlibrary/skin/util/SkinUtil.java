@@ -237,7 +237,7 @@ public class SkinUtil {
      * @return
      */
     public static File getSkinDir(Context context) {
-        File skinDir = new File(getCacheDir(context), "skin");///storage/emulated/0/Android/data/com.jchou.mytodo/cache/skin
+        File skinDir = new File(getCacheDir(context), "skin");///storage/emulated/0/Android/data/包名/cache/skin
         if (!skinDir.exists()) {
             skinDir.mkdirs();
         }
