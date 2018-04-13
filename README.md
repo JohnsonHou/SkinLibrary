@@ -28,6 +28,12 @@ private void initSkinLoader(Context ctx) {
 
 
 改变状态栏可以使用[StatusBarUtil 状态栏工具类](https://jaeger.itscoder.com/android/2016/03/27/statusbar-util.html)
+
+默认状态看颜色为白色，若需要改变默认颜色，在color.xml中添加如下：
+````
+    <!--默认状态栏颜色白色-->
+    <color name="colorStatusBar">#fcf</color>
+````
 ````
 public class SkinBaseActivity extends AppCompatActivity implements ISkinUpdate,IDynamicNewView{
 
